@@ -51,8 +51,8 @@ h2 {
         float: left;
         position: relative;
         top: 20px;
-        left: 36px;
-        width: 400px;
+        left: 10px;
+        width: 200px;
         transition: 0.2s;
         z-index: 99;
     }
@@ -74,18 +74,18 @@ h2 {
         position: absolute;
         float: right;
         top: 200px;
-        right: 20px;
-        width: 280px;
+        right: 100px;
+        width: 200px;
         z-index: 80;
     }
     
     #quote-advertise {
         position: relative;
         float: right;
-        right: 20px;
-        width: 360px;
+        right: 40px;
+        width: 260px;
         z-index: 80;
-        top: 540px;
+        top: 460px;
     }
     
     .container {
@@ -94,9 +94,13 @@ h2 {
         margin: 0 auto;
     }
     
+    #about, #pricing {
+        left: -4px;
+    }
+    
     .about-container {
         position: relative;
-        top: 500px;
+        top: 420px;
         width: 300px;
         height: 900px;
         margin: 0 auto;
@@ -137,7 +141,7 @@ h2 {
             border: 1px solid #FEF529;
             box-sizing: border-box;
             border-radius: 6px;
-            top: 800px;
+            top: 660px;
             height: 940px;
             z-index: 80;
         }
@@ -226,20 +230,46 @@ h2 {
 footer {
     display: block;
     width: 100%;
-    height: 260px;
+    height: 200px;
     background: var(--darkgray);
     position: absolute;
-    top:2700px;
+    top:2560px;
     z-index: 99;
     bottom: 0px;
     left: 0px;
 }
 
     .footer-logo {
-        position: relative;
-        left: 40px;
-        top: 20px;
+        position: absolute;
+        float: left;
+        bottom: 20px;
+        left: 20px;
+        width: 100px;
     }
+    
+    .footer-info {
+        position: relative;
+        top: 20px;
+        float: right;
+        width: 96%;
+        border-top: 1px solid var(--yellow);
+    }
+    
+        .footer-info p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 14px;
+            color: white;
+            letter-spacing: 0.04em;
+            line-height: 20px;
+            position: relative;
+            top: -6px;
+        }
+        
+            .footer-info p a {
+                text-decoration: none;
+                color: var(--yellow);
+            }
+        
 
 /* Larger than phone */
 @media (min-width: 550px) {
@@ -271,8 +301,21 @@ footer {
         position: relative;
     }
     
+    #about, #pricing {
+        left: 0px;
+    }
+    
     #navbar {
         height: 160px;
+    }
+    
+    #logo {
+        float: left;
+        position: relative;
+        top: 20px;
+        left: 36px;
+        transition: 0.2s;
+        z-index: 99;
     }
     
     #navbar-list {
@@ -456,7 +499,16 @@ footer {
         position: relative;
         left: 40px;
         top: 20px;
+        width: 224px;
     }
+    
+        .footer-info {
+            position: relative;
+            top: 20px;
+            float: right;
+            width: 75%;
+            border-top: 1px solid var(--yellow);
+        }
 }
 
 /* Larger than tablet */
@@ -489,8 +541,21 @@ footer {
         position: relative;
     }
     
+    #about, #pricing {
+        left: 0px;
+    }
+    
     #navbar {
         height: 160px;
+    }
+    
+    #logo {
+        float: left;
+        position: relative;
+        top: 20px;
+        left: 36px;
+        transition: 0.2s;
+        z-index: 99;
     }
     
     #navbar-list {
@@ -674,9 +739,16 @@ footer {
         position: relative;
         left: 40px;
         top: 20px;
+        width: 224px;
     }
     
-    
+        .footer-info {
+            position: relative;
+            top: 20px;
+            float: right;
+            width: 75%;
+            border-top: 1px solid var(--yellow);
+        }
 
 }
 

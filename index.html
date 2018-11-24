@@ -101,7 +101,10 @@
         <div class="bg-footer"></div>
         
         <footer>
-            <img class="footer-logo" src="http://bandsinyourbathroom.com/assets/footer-logo.png" height="137" width="224">
+            <img class="footer-logo" src="http://bandsinyourbathroom.com/assets/footer-logo.png" >
+            <div class="footer-info">
+                <p>Email <a href="mailto:contact@bandsinyourbathroom.com" target="_blank">contact@bandsinyourbathroom.com</a> for more information</p>
+            </div>
         </footer>
         
         
@@ -125,6 +128,31 @@
         </script>
         <script>
             document.getElementById("pricing-anchor").scrollIntoView();
+        </script>
+        <script>
+            function myFunction(largerThanTablet) {
+                if (largerThanTablet.matches) {
+                    document.getElementById("logo").style.width = "400px";
+                } else {
+                    document.getElementById("logo").style.width = "200px";
+                }
+            }
+            
+            function myFunction(largerThanPhone) {
+                if (largerThanTablet.matches) {
+                    document.getElementById("logo").style.width = "400px";
+                } else {
+                    document.getElementById("logo").style.width = "200px";
+                }
+            }
+            
+            var largerThanTablet = window.matchMedia("(min-width: 750px)")
+            myFunction(largerThanTablet)
+            largerThanTablet.addListener(myFunction)
+            
+            var largerThanPhone = window.matchMedia("(min-width: 550px)")
+            myFunction(largerThanPhone)
+            largerThanPhone.addListener(myFunction)
         </script>
     </body>
     
