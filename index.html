@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bands in your Bathroom</title>
+        <meta name="description" content="Bands In Your Bathroom is an advertising service used for marketing bands and musicians inside the bathrooms of music venues. These ads go above urinals, and inside bathroom stalls for maximum exposure.">
+        <meta name="author" content="Melvin Alvarez">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--FONTS:
+        body copy: IBM Plex Sans 600 (Semibold)
+        navbar: Black Han Sans (Normal)
+        Section Heading: Sarina (Normal)
+        Logo, Header Copy: Squada One (Normal) 
+        -->
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|IBM+Plex+Sans:400,600|Sarina|Squada+One" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+    </head>
+    <body>
+        <nav id="navbar">
+            <img id="logo" src="http://bandsinyourbathroom.com/assets/logo.png">
+            <ul id="navbar-list">
+                <li class="navbar-item"><a class="navbar-link" href="#pricing">Pricing</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
+            </ul>
+        </nav>
+        
+        
+        
+        <div class="container">
+            <img id="quote-venue" src="http://bandsinyourbathroom.com/assets/quote-venue.png">
+            
+            <div class="about-container">
+                <h1 id="about">About</h1>
+                <p class="about-text">
+                    Are you tired of running ads on Facebook to people who don’t care
+                    about your music? Do you spend countless 
+                    hours working on marketing your music but seeing little to no return? 
+                    Wouldn’t you want to advertise directly to someone listening to your type of music, 
+                    and paying to go to shows? 
+                    <br/><br/>
+                    That’s what <span class="text-highlight">Bands In Your Bathroom</span> is here to do. 
+                    <br/><br/>
+                    <span class="text-highlight">Bands In Your Bathroom</span> is an advertising service used for marketing bands and 
+                    musicians inside the bathrooms of music venues. These ads go above urinals, 
+                    and inside bathroom stalls for maximum exposure. 
+                    <br/><br/>
+                    What better way to advertise 
+                    your music than to put it directly in front of a music listeners face? Each ad is 
+                    an engaging <span class="text-highlight">11x17</span> frame including a promo picture, social media info, new music info, 
+                    and something saying “let us know what bathroom you found us(me) in!” so the person 
+                    seeing the ad might actually engage on social media. 
+                    <br/><br/>
+                    We are in venues that have new shows 
+                    everyday, so there are new people seeing the ads everyday, and there are thousands and 
+                    thousands of people seeing it per month. We have ads all over the country, and with ads 
+                    starting as low as <span class="text-highlight">$20</span>, you can start advertising in bathrooms now!
+                </p>
+            </div>
+            
+            <img id="quote-advertise" src="http://bandsinyourbathroom.com/assets/quote-ad.png">
+            
+            <div class="pricing-container">
+                <h1 id="pricing">Pricing</h1>
+                <div class="pricing-chart">
+                    <div class="pricing-item">
+                        <p><span class="pricing-currency">$</span></p>
+                        <h2>30</h2>
+                        <p class="item-description">
+                            per frame<br/>
+                        with 1 month<br/>
+                        commitment</p>
+                    </div>
+                    <div class="pricing-item">
+                        <p><span class="pricing-currency">$</span></p>
+                        <h2>25</h2>
+                        <p class="item-description">
+                            per frame<br/>
+                        with 2 month<br/>
+                        commitment</p>
+                    </div>
+                    <div class="pricing-item item-highlight">
+                        <p><span class="pricing-recommended">Best Value</span></p>
+                        <p><span class="pricing-currency">$</span></p>
+                        <h2>20</h2>
+                        <p class="item-description">
+                            per frame<br/>
+                        with 3 month<br/>
+                        commitment</p>
+                    </div>
+                </div>
+            </div>
+            <div id="pricing-anchor"></div>
+        </div>
+        
+        
+        <div class="bg-hero"></div>
+        <div class="bg-mid"></div>
+        <div class="bg-footer"></div>
+        
+        <footer>
+            <img class="footer-logo" src="http://bandsinyourbathroom.com/assets/footer-logo.png" height="137" width="224">
+        </footer>
+        
+        
+        <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("navbar").style.height = "120px";
+                document.getElementById("logo").style.width = "240px";
+                document.getElementById("logo").style.top = "10px";
+                document.getElementById("navbar-list").style.top = "28px";
+            } else {
+                document.getElementById("navbar").style.height = "160px";
+                document.getElementById("logo").style.width = "400px";
+                document.getElementById("logo").style.top = "20px";
+                document.getElementById("navbar-list").style.top = "46px";
+            }
+        }
+        </script>
+        <script>
+            document.getElementById("pricing-anchor").scrollIntoView();
+        </script>
+    </body>
+    
+</html>
